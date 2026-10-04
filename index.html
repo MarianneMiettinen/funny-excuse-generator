@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Excuse Generator</title>
+<style>body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:system-ui,sans-serif;background:#ffe3e3;color:#222;overflow:hidden;text-align:center;transition:transform .3s}
+button{font-size:1.6rem;padding:18px 36px;border:none;border-radius:999px;background:#e03131;color:#fff;cursor:pointer;box-shadow:0 6px 0 rgba(0,0,0,.25)}button:active{transform:translateY(4px)}
+#out{font-size:1.4rem;margin:24px 16px;min-height:3em;max-width:600px}</style></head><body>
+<h1>Late again?</h1><button id="b">Give me an excuse</button><p id="out"></p>
+<script>const w=["A goose","My landlord","A suspiciously confident pigeon","My future self","The Finnish tax office","A sentient IKEA lamp","My cat's lawyer","A man named Gerald"],
+a=["stole my left shoe","challenged me to a staring contest","locked me in a sauna","needed emotional support","replaced my coffee with soup","made me sign an NDA","declared my bicycle a sovereign nation","hid in my car"],
+t=["and I lost.","so I had to sing my way out.","for legal reasons I can't say more.","which is honestly fair.","and now we're friends.","twice.","during a full moon."];
+const r=x=>x[Math.random()*x.length|0];b.onclick=()=>{out.textContent='"'+r(w)+' '+r(a)+' '+r(t)+'"';document.body.style.transform='rotate('+((Math.random()-.5)*6)+'deg)'}</script></body></html>
